@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Explorer | Biscoito da Sorte</title>
+</head>
+<body>
+    <main class="page">
+        <section class="screen1 ">
+            <div class="description">
+                <h1>
+                    Qual é a sua sorte de hoje?
+                </h1>
+                <p>
+                    Abra o biscoito e descubra!
+                </p>
+            </div>
+            
+            <button type="submit" id="btnTry" class="cookie" >
+                <img src="assets/images/01.png" alt="Clique no biscoito da sorte">
+            </button>
+            
+            
+        </section>
+
+        <section class="screen2 hide">
+            <div class="description">
+                <h1>
+                    Qual é a sua sorte de hoje?
+                </h1>
+                
+            </div>
+
+            <div class="message">
+                <p>
+                    Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.
+                </p>
+            </div>
+
+            <img src="assets/images/02.png" alt="Clique no biscoito da sorte">
+            
+            <button   id="btnReset">Abrir outro biscoito</button>
+            
+            
+        </section>
+
+        <div class="gradient-bg hide">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="gradients-container">
+                <div class="g1"></div>
+                <div class="g2"></div>
+                <div class="g3"></div>
+                <div class="g4"></div>
+                <div class="g5"></div>
+                <div class="interactive"></div>
+            </div>
+        </div>
+    </main> 
+    <script src="scripts.js"></script>
+</body>
+</html>
